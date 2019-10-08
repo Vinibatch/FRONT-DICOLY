@@ -19,7 +19,7 @@
         callAPI() {                                                                   // methode call API pour recuperer les données et les stocker sur this.state.apiResponse. 
             fetch("http://localhost:9000/testAPI")
                 .then(res => res.text())
-                .then(res => this.setState({ apiResponse: res }));
+                .then(res => this.setState({movies :  data.movies.title}));
         }
         
         componentWillMount() {        // methode pour excuter callAPI apres que le composant est été lancée. 
